@@ -1,4 +1,4 @@
-﻿CREATE TABLE usuario(
+﻿CREATE TABLE usuario (
 	id serial,
 	nome varchar(100),
 	nascimento date,

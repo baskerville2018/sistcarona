@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+  <form method= 'POST'>
+        <div>
+          <label for="exampleInputEmail1">Email address</label>
+          <input name ="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div>
+          <label for="exampleInputPassword1">Password</label>
+          <input name ="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+  </form>
+{% endblock %}

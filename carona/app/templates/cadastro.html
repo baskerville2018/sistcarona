@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+  <form method= 'POST'>
+        <div>
+          <label>Nome completo :</label>
+          <input name="nome" type="text" required>
+        </div>
+        <div>
+          <label>Email :</label>
+            <input name="email" type="email" placeholder="nome@email.com" required>
+        </div>
+        <div>
+          <label>Data de nascimento:</label>
+          <input type="date" name="bday" min="1945-01-02">
+        </div>
+        <div>
+          <label>Senha :</label>
+          <input type="password" name="password" size="10" required>
+        </div>
+        <div>
+          <label>Gênero :  </label>
+          <input type="radio" name="sexo" value="masculino" id="masculino" checked>
+          <label for="masculino">masculino</label>
+          <input type="radio" name="sexo" value="feminino" id="feminino">
+          <label for="feminino">feminino</label>
+        </div>
+        <div>
+          <label>Telefone :  </label>
+          <input type="text" name="ddi" value="+55" style="width: 50px;">
+          <input type="tel" name="telefone" placeholder="seu número" >
+        </div>
+        <div style="float: right;">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-success">Salvar</button>
+        </div>
+  </form>
+{% endblock %}

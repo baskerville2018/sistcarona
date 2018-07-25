@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+  <form method= 'POST'>
+          <div>
+            <label>Qual o ponto de saída?</label>
+            <input name="ponto_de_saida" type="text" required>
+          </div>
+          <div>
+            <label>Qual o ponto de chegada?</label>
+            <input name="ponto_de_chegada" type="text" required>
+          </div>
+          <div>
+            <label>Data da partida:</label>
+            <input type="date" name="data_de_partida" min="2000-01-02">
+          </div>
+          <div>
+            <label>Data da volta:</label>
+            <input type="date" name="data_de_chegada" min="2000-01-02">
+          </div>
+          <div>
+            <label>Lugares:</label>
+            <input name="lugares" type="number" required>
+          <div>
+            <label>Valor:</label>
+            <input name="valor" type="number" step="0.001" required>
+          </div>
+          <div>
+            <label>Descrição da carona</label>
+            <textarea name ="descricao" class="form-control" rows="3"></textarea>
+          <div style="float: right;">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-success">Salvar</button>
+          </div>
+</form>
+{% endblock %}

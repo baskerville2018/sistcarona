@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sistema de Carona</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../static/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../static/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../static/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../static/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../static/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav">
+
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+    <div class="container">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Pocotó caronas
+      </section>
+      <section class="content">
+        <div class="callout callout-info">
+
+          <p>O sistema de caronas foi desenvolvido para facilitar e
+            dar mais segurança e comodidade para quem utiliza
+            desse meio de transporte</p>
+        </div>
+
+      <!-- Main content -->
+
+          {% block content %}
+          {% endblock %}
+
+            </div>
+          </div>
+          <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../static/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../static/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../static/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../static/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../static/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../static/demo.js"></script>
+</body>
+</html>

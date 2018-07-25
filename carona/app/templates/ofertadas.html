@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+  <form method= 'POST'>
+          <div style="float: right;">
+          <h1> Histórico </h1>
+              {% for x in caronas %}
+              <table border="3">
+                <tr>
+                  <th>Ponto de saída</th>
+                  <th>Ponto de chegada</th>
+                  <th>Data de partida</th>
+                  <th>Data de chegada</th>
+                  <th>Lugares</th>
+                  <th>detalhes</th>
+                  <th>Valor</th>
+                </tr>
+                <tr>
+                   <td>{{ x['ponto_de_saida']}}</td>
+                   <td>{{ x['ponto_de_chegada']}}</td>
+                   <td>{{ x['data_de_partida']}}</td>
+                   <td>{{ x['data_de_chegada']}}</td>
+                   <td>{{ x['lugares']}}</td>
+                   <td>{{ x['detalhes']}}</td>
+                   <td>{{ x['valor']}}</td>
+                </tr>
+              </table>
+          </div>
+              {% endfor %}
+        <div style="float: left;">
+          <div>
+            <label>Qual o ponto de saída?</label>
+            <input name="ponto_de_saida" type="text" required>
+          </div>
+          <div>
+            <label>Qual o ponto de chegada?</label>
+            <input name="ponto_de_chegada" type="text" required>
+          </div>
+          <div>
+            <label>Data da partida:</label>
+            <input type="date" name="data_de_partida" min="2000-01-02">
+          </div>
+          <div>
+            <label>Data da volta:</label>
+            <input type="date" name="data_de_chegada" min="2000-01-02">
+          </div>
+          <div style="float: right;">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-success">Participar</button>
+          </div>
+        </div>
+</form>
+{% endblock %}
